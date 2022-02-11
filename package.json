@@ -105,5 +105,17 @@
   },
   "dependencies": {
     "find-cache-dir": "^3.3.2"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japa/run-failed-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/japa/run-failed-tests/issues"
+  },
+  "homepage": "https://github.com/japa/run-failed-tests#readme"
 }
