@@ -1,6 +1,6 @@
 {
   "name": "@japa/run-failed-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run only failed japa tests",
   "main": "build/index.js",
   "files": [
