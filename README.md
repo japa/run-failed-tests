@@ -16,7 +16,6 @@ npm i @japa/run-failed-tests
 ```
 
 ```ts
-// title: ESM
 import { runFailedTests } from '@japa/run-failed-tests'
 
 configure({
