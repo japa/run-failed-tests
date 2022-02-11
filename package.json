@@ -105,7 +105,8 @@
     "anyBranch": false
   },
   "dependencies": {
-    "find-cache-dir": "^3.3.2"
+    "find-cache-dir": "^3.3.2",
+    "fs-extra": "^10.0.0"
   },
   "publishConfig": {
     "access": "public",
