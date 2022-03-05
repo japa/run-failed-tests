@@ -11,6 +11,7 @@ import { join } from 'path'
 import { PluginFn } from '@japa/runner'
 import findCacheDir from 'find-cache-dir'
 import { outputJson, readJson } from 'fs-extra'
+import { sticker, logger } from '@poppinss/cliui'
 
 /**
  * Returns the summary from the summary file
@@ -72,6 +73,15 @@ export function runFailedTests(options?: {
      */
     if (summary.tests?.length) {
       config.filters.tests = summary.tests
+
+      sticker()
+        .heading('@japa/run-failed-tests')
+        .add(
+          `Running ${logger.colors.cyan(`
+            ${summary.tests.length} failed test(s)
+          `)} from the last run`
+        )
+        .render()
 
       /**
        * Empty out files filter when "ignoreFilesFilter" is set to true

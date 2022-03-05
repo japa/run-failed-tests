@@ -105,6 +105,7 @@
     "anyBranch": false
   },
   "dependencies": {
+    "@poppinss/cliui": "^3.0.1",
     "find-cache-dir": "^3.3.2",
     "fs-extra": "^10.0.1"
   },
