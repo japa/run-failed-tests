@@ -109,6 +109,9 @@
     "find-cache-dir": "^3.3.2",
     "fs-extra": "^10.1.0"
   },
+  "peerDependencies": {
+    "@japa/runner": "^2.1.1"
+  },
   "publishConfig": {
     "access": "public",
     "tag": "latest"
