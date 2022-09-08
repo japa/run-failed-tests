@@ -10,8 +10,8 @@
 import { join } from 'path'
 import { PluginFn } from '@japa/runner'
 import findCacheDir from 'find-cache-dir'
+import { sticker } from '@poppinss/cliui'
 import { outputJson, readJson } from 'fs-extra'
-import { icons, logger } from '@poppinss/cliui'
 
 /**
  * Returns the summary from the summary file
@@ -73,11 +73,13 @@ export function runFailedTests(options?: {
      */
     if (summary.tests?.length) {
       config.filters.tests = summary.tests
-      console.log(
-        `${icons.pointer} ${logger.colors.dim(
-          '@japa/run-failed-tests'
-        )}: Running only ${logger.colors.cyan(`${summary.tests.length} failed test(s)`)}`
-      )
+
+      sticker()
+        .heading('"@japa/run-failed-tests"')
+        .add('')
+        .add(`${summary.tests.length} failed test(s) found`)
+        .add('Applying filter to run only failed tests')
+        .render()
 
       /**
        * Empty out files filter when "ignoreFilesFilter" is set to true
