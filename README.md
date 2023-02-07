@@ -23,7 +23,7 @@ configure({
 })
 ```
 
-[github-actions-image]: https://img.shields.io/github/workflow/status/japa/run-failed-tests/test?style=for-the-badge
+[github-actions-image]: https://img.shields.io/github/actions/workflow/status/japa/run-failed-tests/test.yml?style=for-the-badge
 [github-actions-url]: https://github.com/japa/run-failed-tests/actions/workflows/test.yml "github-actions"
 
 [npm-image]: https://img.shields.io/npm/v/@japa/run-failed-tests.svg?style=for-the-badge&logo=npm
